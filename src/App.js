@@ -49,15 +49,12 @@ function App() {
               </div>
             </div>
           </div>
-            <button
-              onClick={() => setShow(!show)}
-              className="md:hidden bg-white m-4 ml-[15rem]"
-            >
-              {<FaBars />}
-            </button>
-            {/* sidebar */}
-
-            <div className='hidden'>
+          <div
+            className={`${
+              show ? "w-24" : "w-0 hidden"
+            } lg:w-48 bg-teal-600  relative duration-500`}
+          >
+            <div>
               <ul className="text-white cursor-pointer hover:bg-slate-600">
                 Home
               </ul>
@@ -68,6 +65,14 @@ function App() {
                 Category
               </ul>
             </div>
+          </div>
+          <button
+            onClick={() => setShow(!show)}
+            className="md:hidden bg-white m-4 ml-[15rem]"
+          >
+            {<FaBars />}
+          </button>
+          {/* sidebar */}
         </div>
       </div>
       <div className="md:mt-10 ">
