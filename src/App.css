@@ -1,0 +1,17 @@
+/* .font{
+    font-family: Montserrat, sans-serif;
+} */
+
+.main {
+  background-image: url("/public/main.jpg");
+  height: 569px;
+  width: 1156px;
+}
+
+@media screen and (max-width: 360px) {
+  .main {
+    background-image: url("/public/main.jpg");
+    height: 390px;
+    width: 150px;
+  }
+}
